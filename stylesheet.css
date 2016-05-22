@@ -102,7 +102,7 @@ color:white;
 	margin: 0;
 	list-style: none;
 	list-style-position: inside;
-	opacity: .8;	
+	opacity: .9;	
 
 
 }
@@ -110,29 +110,10 @@ color:white;
 #nav_bar ul  li:hover > ul{
 		display:block;
 		}
-#arrow_down1 {
 
-	position: absolute;
-	padding-left: 330px;
-	top: 462px;
-	
+#nav_bar li a:hover, #nav_bar li .current{
+	color: #F3C373;
 }
-
-#arrow_down2 {
-
-	position: absolute;
-	padding-left: 580px;
-	top: 462px;
-	
-}
-#arrow_down3 {
-
-	position: absolute;
-	padding-left: 150px;
-	top: 500px;
-	
-}
-
 
 #main-text {
 	margin-left: 110px;
@@ -359,7 +340,7 @@ text-decoration: underline;
 }
 #maps{
 	
-	padding-left:160px;
+	padding-left:140px;
 	
 	}
 
