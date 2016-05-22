@@ -83,12 +83,7 @@ color:white;
 
 	}
 	
-	#nav_bar ul  li a:hover ul
-	{ 
-		background-color: green;
-	;
-	}
-
+	
 
 
 #nav_bar ul  ul {
@@ -97,20 +92,17 @@ color:white;
 }
 
 #nav_bar ul li ul li {
-	
-	height:10px;
-line-height:10px;
-width:120px;
-	background-color: red;
+	height: 10px;
+	line-height: 10px;
+	width: 120px;
+	background-color: rgba(88,168,173,1.00);
 	border: 1px solid #CFF;
 	border-radius: 0px;
 	padding: 10px 0;
 	margin: 0;
 	list-style: none;
 	list-style-position: inside;
-	opacity:.8;
-	
-	
+	opacity: .8;	
 
 
 }
@@ -144,14 +136,12 @@ width:120px;
 
 #main-text {
 	margin-left: 110px;
-	margin-right:110px;
+	margin-right: 110px;
 	margin-top: 5px;
-
-	
 	font-size: .7em;
 	line-height: 1.8em;
 	background-color: #ffffff;
-	text-align: center;
+	text-align: left;
 }
 
 #main-text p {
@@ -171,7 +161,7 @@ color: #000000;
 letter-spacing: 5px;
 margin-left: 50px;
 margin-right: 50px;
-font-size: 1em;
+font-size: 1.5em;
 margin-top: 0;
 padding-top: 10px;
 }
@@ -311,7 +301,7 @@ text-decoration: underline;
 #feedback_form input[type=submit] {
 	width: 160px;
 	margin-top: 20px;
-	margin-left: 10px;
+	margin-left: 100px;
 	background-color: #A8FACB;
 	background-image: -moz-linear-gradient(304deg,rgba(130,216,177,1.00) 100%,rgba(149,255,55,1.00) 100%);
 	background-image: -ms-linear-gradient(146deg, rgba(255, 207, 168, 0.87), #FF9138);
@@ -367,6 +357,10 @@ text-decoration: underline;
 	font-size: 15px;
 	
 }
-
+#maps{
+	
+	padding-left:160px;
+	
+	}
 
 /*   ===========
