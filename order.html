@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Order Online</title>
+
+
+
+
+
+<script type="text/javascript" src="orderform.js"></script>
+
+
+
+
+
+
+
+
+
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<body>
+
+<div id="container">
+
+<div id="header-image">
+
+</div>
+  <div id="nav_bar">
+   <div id="iefix"> 
+    	
+<ul>
+   	  <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+    		<li><a href="store.html">Store</a>
+            
+            	<ul>
+                <li><a href="medicine.html">Medicine</a></li>
+                <li><a href="tanks.html">Tanks</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="fish.html">Fish</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                
+                 </ul>
+                </li>
+          
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">Events</a></li>
+                       
+            
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contactUs.html">Contact Us</a>
+            
+            	<ul>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            
+            </li>
+           
+            
+        </ul>
+        </div>
+    
+        </div>
+  <div id="body">
+
+<div id="main-text">
+			
+    <div id="order_form_container">
+    <form action="http://www.paypal.com" method="post" id="order_form" onSubmit="MM_validateForm('name','','R','telephone','','RisNum');return document.MM_returnValue">
+    
+    
+    
+    
+        
+   	  <fieldset>
+  <center>  <h1> Online Order Form</h1></center>
+      
+      
+      
+      
+            
+                    <div>
+        
+                        <input name="name" id="name" type="text" placeholder="Name*" required/>
+        
+                    </div>
+                    
+        <div>
+                    
+                        <input name="email" id="email" type="email" placeholder="Email*" required/>
+                        
+        </div>
+                    
+                    <div>
+        
+                        <input name="telephone" id="telephone" type="text" placeholder="Telephone" />
+        
+                    </div>
+                    
+                    <div>
+        
+                        <input name="address" id="address" type="text" placeholder="Address*" required/>
+        
+                    </div>
+                    
+                    <br /><br />
+                    
+                    <div id="product_selection_container">
+                    
+                   	  <div class="product_selection_0">
+                                            
+                            <select name="product_type" class="product_type">
+                                <optgroup label="Fresh Water Fish">
+                                <option value="Clown Loach">Clown Loach</option>
+                                <option value="Blue Acara Cichlid ">Blue Acara Cichlid</option>
+                                <option value="Blacktop corydora">Blacktop corydora</option>
+                                <option value="Emerald green cat fish ">Emerald green cat fish </option>
+                                </optgroup>
+                                <optgroup label="Salt Water Fish">
+                                <option value="Premium Pearlscale Koi Angelfish ">Premium Pearlscale Koi Angelfish </option>
+                                <option value="Assorted Blue Angelfish ">Assorted Blue Angelfish </option>
+                                <option value="Marbled Blue Angelfish ">Marbled Blue Angelfish </option>
+                                
+                                <option value="Albino Pearlscale Angelfish ">Albino Pearlscale Angelfish </option> 
+                                </optgroup>
+                                <optgroup label="Brackish Fish">
+                                <option value="Dalmatian Sailfin Molly">Dalmatian Sailfin Molly</option>
+                                <option value="Black Phantom Guppy">Black Phantom Guppy</option>
+                                <option value="Bubble-Eye Goldfish">Bubble-Eye Goldfish</option>
+                                <option value="Guppy">Guppy</option></optgroup>
+                                
+                                <optgroup label="Medicine">
+                                <option value="Defense Fish Stress Relief ">Defense Fish Stress Relief </option>
+  <option value="AquaCleanse Tap Water Detoxifier ">AquaCleanse Tap Water Detoxifier </option> 
+  <option value="Nitrifying Bacteria ">Nitrifying Bacteria</option>
+    <option value="Waste-Away Sludge Busting Bacteria ">Waste-Away Sludge Busting Bacteria </option></optgroup>
+
+  
+  <optgroup label="Fish Food">  
+  <option value="Xtreme Premium Flake Food, 1 oz">Xtreme Premium Flake Food, 1 oz</option><option value="Xtreme Premium Flake Food, 5.6 oz">Xtreme Premium Flake Food, 5.6 oz</option><optgroup label="Fish Tank">
+ <option value="Fish for a 10-gallon Warm-Water Aquarium ">Fish for a 10-gallon Warm-Water Aquarium </option> 
+ <option value="Fish for a 15-gallon Warm-Water Aquarium ">Fish for a 15-gallon Warm-Water Aquarium </option> 
+ <option value="Fish for a 20-gallon Warm-Water Aquarium ">Fish for a 20-gallon Warm-Water Aquarium </option> </optgroup>
+ <optgroup label="Decorations">
+ <option value="Denytrifying Lava Rocks">Denytrifying Lava Rocks</option> </optgroup>
+ <option value="Top Fin Premium Aquarium Gravel">Top Fin Premium Aquarium Gravel</option> </optgroup>
+ <optgroup label="Services">
+ <option value="Pet Grooming">Pet Grooming</option> 
+  <option value="Pet taxi">Pet Taxi</option> 
+   <option value="algae proliferation">algae proliferation</option> 
+      <option value="Pet Sitting">Pet Sitting</option> </optgroup>
+
+
+
+ 
+
+
+ 
+                          
+                                                    
+
+                                
+                                
+                                
+                                
+                                
+
+                         
+
+                <input name="quantity" class="quantity" type="number" min="1" value="1"/>
+                                                        
+                            
+                             <br />  <br />      
+                            
+                          <span class="dollar_sign">$</span>
+                            <span class="product_cost">3.</span>
+                            <span class="calc_text">x</span>
+                            <span class="product_quantity">1</span>
+                            <span class="calc_text"> = $</span>
+                            <span class="product_total">0</span> </select>
+                            
+                              
+                                
+              <br /><br />             
+                                         
+                        </div>
+                        
+                                           
+                    </div>
+                    
+        <p class="add_product">Add More Products!</p>
+					<span id="total_cost_container">Total Cost: $<span id="total_cost">0</span></span><script type="text/javascript" src="orderform.js"></script>
+                    
+
+                    
+                    <script type="text/javascript" src="od1.js"></script>
+                    <div>
+                    
+                        <textarea name="comments" id="comments" placeholder="Comments" ></textarea>
+                        
+        </div>
+                    
+        <input type="submit" value="Proceed to Payment"/>
+                    
+                    <p>* required fields</p>
+            
+            
+      </fieldset>
+            
+    </form>
+
+            
+</div>
+    
+    
+
+         
+
+            
+      
+    
+    
+     
+<div id="footer">
+<a href="https://www.facebook.com/Fish-Tastic-552027478286738/"><img src="Images/face.png" width="40" height="40" alt="face" align= "left" style="padding-left:17px; padding-bottom:2px"/></a>
+<a href="https://www.instagram.com"><img src="Images/insta.png" width="45" height="45" alt="insta" align= "left"/> </a>
+<a href="https://www.twitter.com"><img src="Images/twitter.png" width="46" height="46" alt="twitter" align= "left"/></a>
+ Copyright © 2016 | All Rights Reserved
+  </div>
+  </div>
+  </div>
+<script type="text/javascript">
+$(function() {
+	$( "#Checkboxes1" ).buttonset(); 
+});
+</script>
+</div>
+</body>
+
+
+
+     
+
+</html>

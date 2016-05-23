@@ -14,15 +14,16 @@ margin-right: auto;
 
 
 #header-image {
-	background-color: #1F2123;
+	
 	background-repeat: no-repeat;
 	background-position: left 100px, top -50px;
-	border-bottom: 2px solid #141516;
+	border: 1px solid white;
 	margin-left: 110px;
 	margin-right: 110px;
 	margin-top: 50px;
-	height: 190px;
+	height: 193px;
 	background-image: url(Images/banne.png);
+	
 	display: block;
 	
 	
@@ -101,10 +102,14 @@ color:white;
 	padding: 10px 0;
 	margin: 0;
 	list-style: none;
-	list-style-position: inside;
+
 	opacity: .9;	
 
 
+}
+#iefix {
+position:relative;
+z-index:1000;
 }
 
 #nav_bar ul  li:hover > ul{
@@ -145,6 +150,7 @@ margin-right: 50px;
 font-size: 1.5em;
 margin-top: 0;
 padding-top: 10px;
+text-align:center;
 }
 
 
@@ -344,4 +350,210 @@ text-decoration: underline;
 	
 	}
 
-/*   ===========
+
+
+#order_form_container {
+
+	min-height: 900px;	
+	position: relative;
+	
+}
+
+#order_mons {
+	
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+	left: 190px;
+	
+}
+
+#order_form {
+	
+	position: absolute;
+	top: 30px;
+	left: 70px;
+	color:rgba(2,21,248,0.91);
+
+}
+
+#order_form fieldset{
+	background: rgba(1,203,242,0.91);
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.78), rgba(1,203,242,0.91));
+	background: -o-linear-gradient(rgba(255, 255, 255, 0.78), rgba(1,203,242,0.91));
+	background: -moz-linear-gradient(rgba(255, 255, 255, 0.78), rgba(1,203,242,0.91));
+	background: linear-gradient(rgba(255, 255, 255, 0.78), rgba(1,203,242,0.91));
+	border-radius: 20px;
+	border: 0;
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 80px;
+	-webkit-box-shadow: 0 0 8px rgba(2,21,248,0.91);
+	-moz-box-shadow: 0 0 8px rgba(1,203,242,0.91);
+	box-shadow: 0 0 8px rgba(2,21,248,0.91);
+}
+
+
+#order_form input{
+
+	width: 550px;
+	margin-left: 22px;
+	
+	border-radius: 20px;
+	padding: 8px 10px;
+	opacity: 0.8;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	-webkit-box-shadow: 0 0 8px rgba(0,255,121,1.00);
+	-moz-box-shadow: 0 0 8px rgba(0,255,121,1.00);
+	box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	border: none;
+
+}
+
+
+#order_form select{
+
+	width: 200px;
+	margin-left: 10px;
+	
+	border-radius: 20px;
+	padding: 8px 10px;
+
+	opacity: 0.8;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	-webkit-box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	-moz-box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	border: none;
+
+}
+
+#order_form .quantity{
+
+	width: 100px;
+
+}
+
+
+#order_form textarea {
+
+	resize: none;
+	width: 550px;
+	margin-left: 20px;
+	
+	border-radius: 20px;
+	padding: 8px 10px;
+	opacity: 0.8;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	
+	-webkit-box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	-moz-box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	border: none;
+	
+}
+
+#order_form input[type=submit] {
+
+	width: 220px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+	padding: 20px 0;
+	
+	background: rgba(254, 219, 239, 0.82);
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.78), rgba(254, 219, 239, 0.82)); 
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.78), rgba(254, 219, 239, 0.82)); 
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.78), rgba(254, 219, 239, 0.82));
+    background: linear-gradient(rgba(255, 255, 255, 0.78),rgba(254, 219, 239, 0.82)); 
+	
+	-webkit-box-shadow: 0 0 8px rgba(255, 5, 146, 0.71);
+	-moz-box-shadow: 0 0 8px rgba(255, 5, 146, 0.71);
+	box-shadow: 0 0 8px rgba(255, 5, 146, 0.71);
+	border: none;
+	border-radius: 60px;
+	
+	color: rgba(224, 0, 127, 0.82);
+	font-size: 15px;
+	font-weight: 900;
+}	
+
+#order_form input[type=submit]:hover {
+	
+	background: rgba(249, 239, 245, 0.82);
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.78), rgba(249, 239, 245, 0.82)); 
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.78), rgba(249, 239, 245, 0.82)); 
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.78), rgba(249, 239, 245, 0.82));
+    background: linear-gradient(rgba(255, 255, 255, 0.78),rgba(249, 239, 245, 0.82)); 
+
+}	
+
+
+#order_form p {
+
+	padding: none;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 12px;
+	
+}
+
+.dollar_sign, .calc_text, .product_cost, .product_quantity, .product_total {
+
+	font-size: 12px;
+	padding: none;
+	margin: none;
+
+}
+
+.dollar_sign {
+
+	padding-left: 480px;
+	
+}
+
+#total_cost_container {
+
+	padding-left: 475px;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+
+
+#order_form .remove_product{
+
+	padding-left: 10px;
+	font-weight: bold;
+	cursor: default;
+	
+}
+
+#order_form .remove_product:hover {
+
+	color: rgba(173, 0, 98, 0.82);
+	
+}
+
+#order_form .add_product {
+
+	cursor: default;
+	font-weight: bold;
+	
+}
+
+#order_form .add_product:hover {
+
+	color: rgba(173, 0, 98, 0.82);
+	
+}
+
+
+#order_form div {
+
+	padding: 10px;
+
+}
