@@ -5,6 +5,8 @@ body {
 	margin: 0;
 	font-family: verdana, arial, helvetica, sans-serif;
 	background-color: #5D5959;
+	background-image: url(Images/back.jpg);
+	opacity: 1;	
 }
 #container {
 	width: 1000px;
@@ -22,7 +24,7 @@ margin-right: auto;
 	margin-right: 110px;
 	margin-top: 50px;
 	height: 193px;
-	background-image: url(Images/banne.png);
+	
 	
 	display: block;
 	
@@ -33,12 +35,12 @@ margin-right: auto;
 	background-color: #1F2123;
 	background-repeat: no-repeat;
 	background-position: left 100px, top -50px;
-	border-bottom: 2px solid #141516;
+	border: 2px solid #141516;
 	margin-left: 105px;
 	margin-right: 110px;
 	margin-top: 50px;
-	height: 190px;
-	background-image: url(Images/banne.png);
+	height: 200px;
+	
 	display: block;
 	
 	
@@ -103,7 +105,7 @@ color:white;
 	margin: 0;
 	list-style: none;
 
-	opacity: .9;	
+	opacity: 1;	
 
 
 }
@@ -188,13 +190,13 @@ text-decoration: underline;
 		
 }
 
-#feedback_fox {
-
+#feedback_call {
 	position: absolute;
-	left: 200px;	
-	top : 460px;
+	left: 200px;
+	top : 500px;
 	z-index: 10;
-	
+	-webkit-box-shadow: 5px 5px 5px rgba(126,255,150,1.00);
+	box-shadow: 5px 5px 5px rgba(126,255,150,1.00);
 }
 
 #feedback_form {
@@ -222,9 +224,9 @@ text-decoration: underline;
 	width: 360px;
 	margin: 0 auto;
 	padding-top: 80px;
-	-webkit-box-shadow: 0 0 8px rgba(255, 207, 168, 0.87);
+	-webkit-box-shadow: 0 0 8px rgba(163,238,215,0.87);
 	-moz-box-shadow: 0 0 8px rgba(255, 207, 168, 0.87);
-	box-shadow: 0 0 8px rgba(255, 207, 168, 0.87);
+	box-shadow: 0 0 8px rgba(163,238,215,0.87);
 }
 
 
@@ -391,6 +393,7 @@ text-decoration: underline;
 	-webkit-box-shadow: 0 0 8px rgba(2,21,248,0.91);
 	-moz-box-shadow: 0 0 8px rgba(1,203,242,0.91);
 	box-shadow: 0 0 8px rgba(2,21,248,0.91);
+	opacity: 1;
 }
 
 
@@ -420,7 +423,7 @@ text-decoration: underline;
 	border-radius: 20px;
 	padding: 8px 10px;
 
-	opacity: 0.8;
+	opacity: 1;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 13px;
 	-webkit-box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
@@ -557,3 +560,24 @@ text-decoration: underline;
 	padding: 10px;
 
 }
+#arrow_down1 {
+
+	position: absolute;
+	padding-left: 255px;
+	top: 295px;
+	height: 13px;
+	width:13px;
+	
+}
+
+#arrow_down2 {
+
+	position: absolute;
+	padding-left: 680px;
+	top: 295px;
+	height: 13px;
+	width:13px;
+	
+}
+
+	
