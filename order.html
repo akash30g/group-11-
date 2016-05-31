@@ -9,15 +9,6 @@
 
 
 <script type="text/javascript" src="orderform.js"></script>
-
-
-
-
-
-
-
-
-
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
@@ -46,25 +37,34 @@ function MM_validateForm() { //v4.0
 </head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<body>
+<body onSubmit="MM_validateForm('name','','R','telephone','','RisNum','email','','RisEmail','address','','R');return document.MM_returnValue" >
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="container">
 
 <div id="header-image">
 
-</div>
+<a href="index.html"><img src="Images/banne.jpg" width="780" height="200" alt=""/> </a></div>
   <div id="nav_bar">
-  <img id="arrow_down1" src="Images/a1.png"/>
-        <img id="arrow_down2" src="Images/a1.png"/> 
- <div id="iefix">  
- 
+   <div id="iefix"> 
+    	
 <ul>
    	  <li><a href="index.html">Home</a></li>
             <li><a href="AboutUs.html">About Us</a></li>
     		<li><a href="store.html">Store</a>
             
             	<ul>
-                <li><a href="store.html#fish">Fish</a></li>
+               <li><a href="store.html#fish">Fish</a></li>
                 <li><a href="store.html#tanks">Tanks</a></li>
                 <li><a href="store.html#food">Food</a></li>
                 <li><a href="store.html#medicine">Medicine</a></li>
@@ -89,11 +89,7 @@ function MM_validateForm() { //v4.0
            
             
         </ul>
-        
-        
-    
         </div>
-    
     
         </div>
   <div id="body">
@@ -101,7 +97,7 @@ function MM_validateForm() { //v4.0
 <div id="main-text">
 			
     <div id="order_form_container">
-    <form action="http://www.paypal.com" method="post" id="order_form" onSubmit="MM_validateForm('name','','R','telephone','','RisNum');return document.MM_returnValue">
+    <form action="http://www.paypal.com" method="post" id="order_form" >
     
     
     
@@ -122,19 +118,19 @@ function MM_validateForm() { //v4.0
                     
         <div>
                     
-                        <input name="email" id="email" type="email" placeholder="Email*" required/>
+                        <input name="address" id="address" type="email" placeholder="Email*" required/>
                         
         </div>
                     
                     <div>
         
-                        <input name="telephone" id="telephone" type="text" placeholder="Telephone" />
+                        <input name="telephone" id="telephone" type="text" placeholder="Telephone*" />
         
                     </div>
                     
                     <div>
         
-                        <input name="address" id="address" type="text" placeholder="Address*" required/>
+                        <input name="email" id="email" type="text" placeholder="Address*" required/>
         
                     </div>
                     
@@ -144,7 +140,7 @@ function MM_validateForm() { //v4.0
                     
                    	  <div class="product_selection_0">
                                             
-                            <select name="product_type" class="product_type">
+                            <select name="product_type" class="product_type"> 
                                 <optgroup label="Fresh Water Fish">
                                 <option value="Clown Loach">Clown Loach</option>
                                 <option value="Blue Acara Cichlid ">Blue Acara Cichlid</option>
@@ -172,13 +168,28 @@ function MM_validateForm() { //v4.0
 
   
   <optgroup label="Fish Food">  
-  <option value="Xtreme Premium Flake Food, 1 oz">Xtreme Premium Flake Food, 1 oz</option><option value="Xtreme Premium Flake Food, 5.6 oz">Xtreme Premium Flake Food, 5.6 oz</option><optgroup label="Fish Tank">
+<option value="Xtreme Premium Flake Food, 1 oz">Xtreme Premium Flake Food, 1 oz</option><option value="Xtreme Premium Flake Food, 5.6 oz">Xtreme Premium Flake Food, 5.6 oz</option>
+<option value="TetraMin Tropical Sinking Fish Food ">TetraMin Tropical Sinking Fish Food </option>
+ <option value="TetraColor Tropical Fish Food Flakes ">TetraColor Tropical Fish Food Flakes </option></optgroup>
+ 
+ 
+ 
+ <optgroup label="Fish Tank">
  <option value="Fish for a 10-gallon Warm-Water Aquarium ">Fish for a 10-gallon Warm-Water Aquarium </option> 
  <option value="Fish for a 15-gallon Warm-Water Aquarium ">Fish for a 15-gallon Warm-Water Aquarium </option> 
- <option value="Fish for a 20-gallon Warm-Water Aquarium ">Fish for a 20-gallon Warm-Water Aquarium </option> </optgroup>
+ <option value="Fish for a 20-gallon Warm-Water Aquarium ">Fish for a 20-gallon Warm-Water Aquarium </option>
+ <option value="Fish for a 25-gallon Warm-Water Aquarium ">Fish for a 25-gallon Warm-Water Aquarium </option> 
+ 
+ 
+ 
+ 
+ </optgroup>
  <optgroup label="Decorations">
- <option value="Denytrifying Lava Rocks">Denytrifying Lava Rocks</option> </optgroup>
- <option value="Top Fin Premium Aquarium Gravel">Top Fin Premium Aquarium Gravel</option> </optgroup>
+ <option value="Denytrifying Lava Rocks">Denytrifying Lava Rocks</option> 
+ <option value="Glowing Effect Artificial Coral Plant">Glowing Effect Artificial Coral Plant</option> 
+ <option value="Penn-Plax Dory W/Coral Mini ">Penn-Plax Dory W/Coral Mini</option> 
+ <option value="Penn-Plax Nemo W/Coral Mini ">Penn-Plax Nemo W/Coral Mini</option> </optgroup>
+  
  <optgroup label="Services">
  <option value="Pet Grooming">Pet Grooming</option> 
   <option value="Pet taxi">Pet Taxi</option> 
@@ -194,31 +205,25 @@ function MM_validateForm() { //v4.0
                           
                                                     
 
-                                
-                                
-                                
-                                
-                                
-
-                         
-
+                                                             
+                                                   
                 <input name="quantity" class="quantity" type="number" min="1" value="1"/>
                                                         
                             
-                             <br />  <br />      
+                             <br >  <br/>      
                             
                           <span class="dollar_sign">$</span>
-                            <span class="product_cost">3.</span>
+                            <span class="product_cost">10</span>
                             <span class="calc_text">x</span>
                             <span class="product_quantity">1</span>
-                            <span class="calc_text"> = $</span>
-                            <span class="product_total">0</span> </select>
+                            <span class="calc_text">=$</span>
+                            <span class="product_total">0</span></select>
                             
                               
                                 
               <br /><br />             
                                          
-                        </div>
+                      </div>
                         
                                            
                     </div>
@@ -228,7 +233,7 @@ function MM_validateForm() { //v4.0
                     
 
                     
-                    <script type="text/javascript" src="od1.js"></script>
+          <script type="text/javascript" src="od1.js"></script>
                     <div>
                     
                         <textarea name="comments" id="comments" placeholder="Comments" ></textarea>
@@ -242,9 +247,9 @@ function MM_validateForm() { //v4.0
             
       </fieldset>
             
-    </form>
+           
 
-            
+   </form>         
 </div>
     
     

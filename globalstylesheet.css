@@ -9,7 +9,7 @@
 	
 	}
 	.box2{
-	background-color:red;
+	
 	height: 250px;
 	width: 250px;
 	float:left;
@@ -19,7 +19,7 @@
 	margin-bottom:25px;
 	}
 	.box3{
-	background-color:green;
+	
 	height: 250px;
 	width: 250px;
 	float:right;
@@ -30,7 +30,7 @@
 	}
 	.box4{
 	
-	background-color:green;
+	
 	height: 250px;
 	width: 250px;
 	float:left;
@@ -40,7 +40,7 @@
 	margin-bottom:25px;
 	}
 	.box5{
-	background-color:red;
+	
 	height: 250px;
 	width: 250px;
 	float:right;
@@ -52,7 +52,7 @@
 	h1{
 		
 		
-		border:2px solid black;
+		
 		text-align:center;
 		
 		
@@ -63,6 +63,7 @@
 	display: block;
 	width: 100px;
 	padding: 4px 0 5px 0;
+
 	margin-bottom: 10px;
 	color: #ffffff;
 	font-weight: bold;
@@ -70,3 +71,88 @@
 	background-color: rgba(69,247,208,1.00);
 	border-radius: 40px;
 }
+pic {
+  border: px solid #fff;  
+  float: left;
+  height: 300px;
+  width: 300px;
+  margin-top: 100px;
+-webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+  
+ 
+}
+/*GROW*/
+.grow img {
+  
+ -webkit-filter: brightness(80%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+		-webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;    
+
+}
+.grow img:hover {
+  width: 350px;
+  height: 350px;
+  -webkit-filter: brightness(150%);
+}
+
+
+#tab_bar ul  {
+	padding-bottom:100px;
+	padding: 0px;
+	list-style-type: none;
+}
+#tab_bar ul li a{
+	text-decoration:none;
+	color:white;
+	display:block;
+}
+#tab_bar ul li{
+	float:left;
+	width:156px;
+	height:40px;
+	background-color:black;
+	font-size:20px;
+	line-height:40px;
+	text-align:center;
+	
+}
+#tab_bar ul li a:hover{
+	background-color:orange;
+}
+	#fix { 
+	position: fixed; 
+	top: 350px; 
+	left: 20px; 
+	z-index: 999;
+	 width:120px;}
+	 
+#tab_bar2 ul  {
+	padding-bottom:100px;
+	padding: 0px;
+	list-style-type: none;
+}
+#tab_bar2 ul li a{
+	text-decoration:none;
+	color:white;
+	display:block;
+}
+#tab_bar2 ul li{
+	
+	width:150px;
+	height:40px;
+	background-color:black;
+	font-size:20px;
+	line-height:40px;
+	text-align:center;
+	
+}
+#tab_bar2 ul li a:hover{
+	background-color:orange;
+}
+	

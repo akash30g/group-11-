@@ -27,33 +27,15 @@ function MM_validateForm() { //v4.0
 
 
 
-<body onSubmit="MM_validateForm('name','','R','phone','','RisNum');return document.MM_returnValue">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<body 
+onSubmit="MM_validateForm('name','','R','phone','','RisEmail','email','','RisEmail','question','','R');return document.MM_returnValue">
 
 
 <div id="container">
 
 <div id="header-image">
-  <a href="https://www.instagram.com"><img src="Images/banne.jpg" width="780" height="200" alt=""/> </a></div>
+<a href="index.html"><img src="Images/banne.jpg" width="780" height="200" alt=""/> </a></div>
 <div id="nav_bar">
-<img id="arrow_down1" src="Images/a1.png"/>
-<img id="arrow_down2" src="Images/a1.png"/>
     
     	
 <ul>
@@ -62,11 +44,12 @@ function MM_validateForm() { //v4.0
     		<li><a href="store.html">Store</a>
             
             	<ul>
-                <li><a href="medicine.html">Medicine</a></li>
-                <li><a href="tanks.html">Tanks</a></li>
-                <li><a href="food.html">Food</a></li>
-                <li><a href="fish.html">Fish</a></li>
-                <li><a href="accessories.html">Accessories</a></li>
+                 <li><a href="store.html#fish">Fish</a></li>
+                <li><a href="store.html#tanks">Tanks</a></li>
+                <li><a href="store.html#food">Food</a></li>
+                <li><a href="store.html#medicine">Medicine</a></li>
+                <li><a href="store.html#accessories">Accessories</a></li>
+                
                 
                  </ul>
                 </li>
@@ -131,7 +114,7 @@ function MM_validateForm() { //v4.0
                     
                     <div>
                     
-                        <textarea name="feedback" id="question" placeholder="Inquiry*" required></textarea>
+                        <textarea name="inquiry" id="question" placeholder="Inquiry*" required></textarea>
                         
                     </div>
                     
@@ -178,7 +161,7 @@ function MM_validateForm() { //v4.0
     
   <p > <strong> * Email Response Time is generally 1 - 2 working days</strong></p>    
       
-    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div id="maps"  style='overflow:hidden;height:300px;width:500px;'><div id='gmap_canvas' style='height:440px;width:500px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsandcondiitionssample.com">terms and conditions sample</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(1.364382279949195,103.88410578323672),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(1.364382279949195,103.88410578323672)});infowindow = new google.maps.InfoWindow({content:'<strong>Fish-Tastic </strong><br>83 punggol road, singapore<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script><div id="maps"  style="overflow:hidden;height:300px;width:500px;"><div id="gmap_canvas" style="height:440px;width:500px;"></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsandcondiitionssample.com">terms and conditions sample</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type="text/javascript">function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(1.364382279949195,103.88410578323672),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(1.364382279949195,103.88410578323672)});infowindow = new google.maps.InfoWindow({content:'<strong>Fish-Tastic </strong><br>83 punggol road, singapore<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
     
 
 <div id="footer">

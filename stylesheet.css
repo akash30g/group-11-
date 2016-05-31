@@ -151,7 +151,7 @@ margin-left: 50px;
 margin-right: 50px;
 font-size: 1.5em;
 margin-top: 0;
-padding-top: 10px;
+padding-top: 50px;
 text-align:center;
 }
 
@@ -163,9 +163,6 @@ a:link, a:visited {
 	color: #7990A6;
 }
 
-a:hover {
-text-decoration: underline;
-}
 
 
 #footer {
@@ -192,7 +189,7 @@ text-decoration: underline;
 
 #feedback_call {
 	position: absolute;
-	left: 200px;
+	left: 250px;
 	top : 500px;
 	z-index: 10;
 	-webkit-box-shadow: 5px 5px 5px rgba(126,255,150,1.00);
@@ -390,10 +387,9 @@ text-decoration: underline;
 	width: 500px;
 	margin: 0 auto;
 	padding-top: 80px;
-	-webkit-box-shadow: 0 0 8px rgba(2,21,248,0.91);
+	-webkit-box-shadow: 0 0 8px rgba(4,186,255,0.71);
 	-moz-box-shadow: 0 0 8px rgba(1,203,242,0.91);
 	box-shadow: 0 0 8px rgba(2,21,248,0.91);
-	opacity: 1;
 }
 
 
@@ -409,7 +405,7 @@ text-decoration: underline;
 	font-size: 13px;
 	-webkit-box-shadow: 0 0 8px rgba(0,255,121,1.00);
 	-moz-box-shadow: 0 0 8px rgba(0,255,121,1.00);
-	box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	box-shadow: 0 0 8px rgba(4,186,255,0.71);
 	border: none;
 
 }
@@ -423,12 +419,12 @@ text-decoration: underline;
 	border-radius: 20px;
 	padding: 8px 10px;
 
-	opacity: 1;
+	opacity: 0.8;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 13px;
-	-webkit-box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
-	-moz-box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
-	box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	-webkit-box-shadow: 0 0 8px rgba(4,186,255,0.71);
+	-moz-box-shadow: 0 0 8px rgba(4,186,255,0.71);
+	box-shadow: 0 0 8px rgba(4,186,255,0.71);
 	border: none;
 
 }
@@ -452,36 +448,33 @@ text-decoration: underline;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 13px;
 	
-	-webkit-box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
-	-moz-box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
-	box-shadow: 0 0 8px rgba(249, 91, 181, 0.71);
+	-webkit-box-shadow: 0 0 8px rgba(4,186,255,0.71);
+	-moz-box-shadow: 0 0 8px rgba(4,186,255,0.71);
+	box-shadow: 0 0 8px rgba(4,186,255,0.71);
 	border: none;
 	
 }
 
 #order_form input[type=submit] {
-
 	width: 220px;
 	margin-top: 40px;
 	margin-bottom: 10px;
 	margin-left: 210px;
 	padding: 20px 0;
-	
-	background: rgba(254, 219, 239, 0.82);
-	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.78), rgba(254, 219, 239, 0.82)); 
-    background: -o-linear-gradient(rgba(255, 255, 255, 0.78), rgba(254, 219, 239, 0.82)); 
-    background: -moz-linear-gradient(rgba(255, 255, 255, 0.78), rgba(254, 219, 239, 0.82));
-    background: linear-gradient(rgba(255, 255, 255, 0.78),rgba(254, 219, 239, 0.82)); 
-	
-	-webkit-box-shadow: 0 0 8px rgba(255, 5, 146, 0.71);
-	-moz-box-shadow: 0 0 8px rgba(255, 5, 146, 0.71);
-	box-shadow: 0 0 8px rgba(255, 5, 146, 0.71);
+	background: rgba(4,186,255,0.71);
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.78), rgba(4,186,255,0.71));
+	background: -o-linear-gradient(rgba(4,186,255,0.71), rgba(4,186,255,0.71));
+	background: -moz-linear-gradient(rgba(4,186,255,0.71), rgba(4,186,255,0.71));
+	background: linear-gradient(rgba(4,186,255,0.71),rgba(4,186,255,0.71));
+	-webkit-box-shadow: 0 0 8px rgba(3,255,60,0.71);
+	-moz-box-shadow: 0 0 8px rgba(4,186,255,0.71);
+	box-shadow: 0 0 8px rgba(3,255,60,0.71);
 	border: none;
 	border-radius: 60px;
-	
-	color: rgba(224, 0, 127, 0.82);
+	color: rgbargba(3,255,60,0.71);
 	font-size: 15px;
 	font-weight: 900;
+	
 }	
 
 #order_form input[type=submit]:hover {
@@ -552,6 +545,13 @@ text-decoration: underline;
 
 	color: rgba(173, 0, 98, 0.82);
 	
+}
+
+
+#order_form div {
+
+	padding: 10px;
+
 }
 
 

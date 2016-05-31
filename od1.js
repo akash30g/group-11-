@@ -82,51 +82,61 @@ $(document).ready( function(){
 		
 		
 		if (productType === "Clown Loach") 
-			{productCost = 3.5;}
+			{productCost = 10;}
 		else if (productType === "Blue Acara Cichlid ") 
-			{productCost = 5;} 
+			{productCost = 17;} 
 		else if (productType === "Blacktop corydora") 
-			{productCost = 11;}
+			{productCost = 15;}
 		else if (productType === "Emerald green cat fish ") 
-			{productCost = 4;}  
+			{productCost = 14;}  
 		else if (productType === "Premium Pearlscale Koi Angelfish ") 
-			{productCost = 3;} 
+			{productCost = 18;} 
 		else if (productType === "Assorted Blue Angelfish ") 
-			{productCost = 4;}
+			{productCost = 20;}
 			else if (productType === "Marbled Blue Angelfish ") 
-			{productCost = 5;}
+			{productCost = 13;}
 			else if (productType === "Albino Pearlscale Angelfish ") 
-			{productCost = 4;}
+			{productCost = 16;}
 			else if (productType === "Dalmatian Sailfin Molly") 
-			{productCost = 5;}
+			{productCost = 15;}
 			else if (productType === "Black Phantom Guppy") 
-			{productCost = 4;}
+			{productCost = 17;}
 			else if (productType === "Bubble-Eye Goldfish") 
-			{productCost = 5;}
+			{productCost = 14;}
 			else if (productType === "Guppy") 
-			{productCost = 4;}
+			{productCost = 11;}
 			else if (productType === "Defense Fish Stress Relief ") 
-			{productCost = 5;}
+			{productCost = 15;}
 			else if (productType === "AquaCleanse Tap Water Detoxifier ") 
-			{productCost = 4;}
+			{productCost = 13;}
 			else if (productType === "Nitrifying Bacteria ") 
-			{productCost = 5;}
+			{productCost = 11;}
 			else if (productType === "Waste-Away Sludge Busting Bacteria ") 
-			{productCost = 4;}
+			{productCost = 12;}
 	        else if (productType ==="Xtreme Premium Flake Food, 1 oz") 
-			{productCost = 5;}
+			{productCost = 12;}
 			else if (productType ==="Xtreme Premium Flake Food, 5.6 oz") 
-			{productCost = 4;}
+			{productCost = 18;}
+			else if (productType ==="TetraMin Tropical Sinking Fish Food") 
+			{productCost = 12;}
+			else if (productType ==="TetraColor Tropical Fish Food Flakes ") 
+			{productCost = 15;}
 			else if (productType ==="Fish for a 10-gallon Warm-Water Aquarium ") 
-			{productCost = 5;}
+			{productCost = 140;}
 			else if (productType ==="Fish for a 15-gallon Warm-Water Aquarium ") 
-			{productCost = 4;}
+			{productCost = 160;}
 			else if (productType ==="Fish for a 20-gallon Warm-Water Aquarium ") 
-			{productCost = 5;}
+			{productCost = 175;}
+			else if (productType ==="Fish for a 20-gallon Warm-Water Aquarium ") 
+			{productCost = 200;}
 			else if (productType ==="Denytrifying Lava Rocks") 
-			{productCost = 4;}
-			else if (productType ==="Top Fin Premium Aquarium Gravel") 
-			{productCost = 5;}
+			{productCost = 10;}
+			else if (productType ==="Glowing Effect Artificial Coral Plant") 
+			{productCost = 9;}
+			else if (productType ==="Penn-Plax Dory W/Coral Mini") 
+			{productCost = 7;}
+			else if (productType ==="Penn-Plax Nemo W/Coral Mini") 
+			{productCost = 8;}
 			else if (productType ==="Pet Grooming") 
 			{productCost = 50;}
 			else if (productType ==="Pet Taxi") 
